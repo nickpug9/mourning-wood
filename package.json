@@ -1,0 +1,42 @@
+{
+  "name": "customtheme",
+  "version": "1.0.0",
+  "description": "custom theme",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@stimulus/polyfills": "^1.1.1",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "bs-html-injector": "^3.0.3",
+    "cross-env": "^7.0.2",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-strip-comments": "^2.5.2",
+    "path": "^0.12.7",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-media-minmax": "^4.0.0",
+    "postcss-nested": "^4.2.3",
+    "rimraf": "^3.0.2",
+    "webpack-stream": "^6.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rimraf dist/ && cross-env MODE=development gulp",
+    "build": "rimraf dist/ && cross-env MODE=production gulp build"
+  },
+  "author": "Nick Pugliesi",
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "timber/timber": "^1.18",
+        "doctrine/inflector": "^2.0",
+        "aristath/kirki": "^3.1"
+    }
+}
