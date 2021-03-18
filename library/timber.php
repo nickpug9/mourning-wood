@@ -34,7 +34,6 @@ class MySite extends Timber\Site
   public function add_to_twig($twig)
   {
     $twig->addExtension(new Twig_Extension_StringLoader());
-    // $twig->addFunction(new Timber\Twig_Function('nextlevel_get_asset', 'nextlevel_get_asset'));
     return $twig;
   }
 

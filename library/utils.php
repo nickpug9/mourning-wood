@@ -39,7 +39,7 @@ function capitalize($str)
 
 function redirect_layouts_home()
 {
-  header("Location: /wp-admin/admin.php?page=nextlevel_layouts");
+  header("Location: /wp-admin/admin.php?page=layouts");
   die();
 }
 

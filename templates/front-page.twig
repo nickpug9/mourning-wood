@@ -1,3 +1,14 @@
 {% include "partials/header.twig" %}
 {% include "partials/front-hero.twig" %}
+{% block content %}
+	<section class="content front">
+		<div class="content__left">
+			{% include "partials/sidebar.twig" %}
+		</div>
+		<div class="content__right">
+			<p>{{ post.content }}</p>
+		</div>
+
+	</section>
+{% endblock content %}
 {% include "partials/footer.twig" %}

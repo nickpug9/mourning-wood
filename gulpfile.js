@@ -42,11 +42,11 @@ const strip = require("gulp-strip-comments");
 const config = (modern) => {
   if (modern === true) {
     var webpackPath = path.resolve(__dirname, "dist/modern/");
-    var webpackPublic = "/wp-content/themes/nextlevel/dist/modern/";
+    var webpackPublic = "/wp-content/themes/practiceTheme/dist/modern/";
     var builtIns = "usage";
   } else {
     var webpackPath = path.resolve(__dirname, "dist/legacy/");
-    var webpackPublic = "/wp-content/themes/nextlevel/dist/legacy/";
+    var webpackPublic = "/wp-content/themes/practiceTheme/dist/legacy/";
     var builtIns = "entry";
   }
 
@@ -157,7 +157,7 @@ function server(done) {
   });
 
   browser.init({
-    proxy: "http://personal.local",
+    proxy: "http://development.local",
     ui: {
       port: 9000,
     },
